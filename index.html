@@ -1,0 +1,1304 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Datang! — ...</title>
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png"> -->
+
+    <!-- Light mode favicon -->
+    <!-- <link rel="icon" href="./assets/image/favicon-light.png" type="image/x-icon" media="(prefers-color-scheme: light)"> -->
+
+    <!-- Dark mode favicon -->
+    <!-- <link rel="icon" href="./assets/image/favicon-dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" type="text/tailwindcss" href="./assets/tailwind.css">
+    <script src="./assets/script.js" defer></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="mulish navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0">
+        <div id="nav-container"
+            class="flex items-center justify-between w-full px-7 md:px-10 py-6 bg-transparent transition-all duration-300 flex-wrap">
+
+            <div class="flex items-center">
+                <img src="./assets/" alt="Smilebox Logo" class="w-6 h-6 md:w-6 md:h-6" />
+            </div>
+
+            <button id="hamburger"
+                class="transition-transform duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] text-neutral-600 md:hidden"
+                onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="currentColor">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </button>
+
+            <div id="menu-items" class="hidden w-full md:flex md:w-auto md:items-center md:gap-10 mt-6 md:mt-0">
+                <div class="flex flex-col md:flex-row md:items-center gap-6 text-sm font-medium text-gray-500">
+                    <a href="#tentang" class="hover:text-black transition">Tentang</a>
+                    <a href="#layanan" class="hover:text-black transition">Layanan</a>
+                    <a href="#dokter" class="hover:text-black transition">Dokter</a>
+                    <a href="#kontak" class="hover:text-black transition">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Konten-->
+    <main class="relative w-full pt-40">
+        <!--HEADER-->
+        <section id="header" class="reveal no-reveal-hover">
+            <section class="relative w-full aspect-[2/1] flex flex-col items-center">
+
+                <div
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full rounded-t-full bg-sky-400 overflow-hidden z-10">
+                    <div class="flex flex-col items-center w-full">
+                        <h1 class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] [text-shadow:4px_4px_0px_rgba(0,0,0,1)]"
+                            aria-hidden="true">
+                            Terdapat Berlian di Senyumanmu
+                        </h1>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-[5%] xl:bottom-[24%] left-1/2 -translate-x-1/2 w-[55%] xl:w-[45%] h-full z-20 pointer-events-none">
+
+                    <img src="./assets/image/header/header-1.png" alt="Portrait 1"
+                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-100" />
+
+                    <img src="./assets/image/header/header-2.png" alt="Portrait 2"
+                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
+
+                    <img src="./assets/image/header/header-3.png" alt="Portrait 2"
+                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
+
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent z-30">
+                    </div>
+                </div>
+
+                <div class="absolute inset-0 flex flex-col items-center pointer-events-none z-30">
+                    <h1
+                        class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-center px-10 pt-[2%] lg:pt-[5%]">
+                        Terda<span class="text-white [text-shadow:4px_4px_0px_rgba(0,0,0,1)]">pat Berlian di
+                            Senyu</span>manmu
+                    </h1>
+                </div>
+
+                <h1
+                    class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-black text-center px-10 pt-[2%] lg:pt-[5%] z-0 [text-shadow:4px_4px_0px_rgba(0,188,255,1)]">
+                    Terdapat Berlian di Senyumanmu
+                </h1>
+            </section>
+
+            <section class="w-full bg-sky-400 pb-10 xl:pb-0">
+                <h1
+                    class="fraunces block xl:hidden text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] z-0">
+                    Terdapat Berlian di
+                    <span class="inline-block whitespace-nowrap">
+                        Senyumanmu<img src="./assets/image/doodles/diamond-white.svg"
+                            class="inline-block w-8 h-8 mb-[0.5em] ml-0.5" alt="icon" />
+                    </span>
+                </h1>
+            </section>
+
+            <section class="hidden xl:flex w-full bg-sky-400 justify-center items-center py-4 hover-float">
+                <img src="./assets/image/doodles/diamond-white.svg" alt="diamond">
+            </section>
+
+            <section class="w-full bg-sky-400 flex justify-center hover-float">
+                <img src="./assets/image/doodles/line.svg" alt="line">
+            </section>
+
+            <div class="w-full bg-sky-400 py-10 xl:py-20 px-10 flex items-center justify-center">
+                <h1 class="fraunces font-bold text-white text-3xl xl:text-6xl text-center">
+                    Senyumanmu perlu <i>visi</i>, bukan perbaikan
+                </h1>
+            </div>
+
+            <!--TENTANG-->
+            <section id="tentang">
+                <div class="bg-gradient-to-b from-sky-400 to-white py-12 md:py-16">
+                    <div class="max-w-7xl mx-auto px-6 md:px-12 space-y-16 md:space-y-24">
+
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0">
+
+                            <div
+                                class="reveal delay-1 bg-white px-8 py-10 md:px-16 md:py-14 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.12)] w-full md:w-[60%] z-20 relative md:-mr-24 transition-all order-2 md:order-1">
+                                <div
+                                    class="absolute -top-5 left-10 bg-sky-400 text-white px-10 py-2.5 rounded-2xl shadow-md fraunces font-semibold text-lg tracking-wide">
+                                    Tentang Kami
+                                </div>
+                                <div class="mulish mt-4 text-gray-600 leading-relaxed text-sm md:text-base">
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam sit
+                                        dignissimos, sunt officiis excepturi id cumque nisi inventore deleniti corrupti
+                                        exercitationem dolorum velit repudiandae tempore temporibus in ipsam ipsum!
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente adipisci
+                                        numquam similique nisi fuga veniam, quisquam odio provident, voluptates atque
+                                        unde vero quo, pariatur commodi! Quibusdam rerum omnis aliquid animi?
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="reveal delay-2 w-full md:w-[55%] order-1 md:order-2">
+                                <div
+                                    class="border-4 border-white rounded-[2.5rem] overflow-hidden shadow-xl hover-float">
+                                    <img src="./assets/image/tentang-Visi/" alt="fotoTentang"
+                                        class="w-full aspect-[3/2] object-cover object-center">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0">
+
+                            <div class="reveal delay-3 w-full md:w-[55%] order-1">
+                                <div
+                                    class="border-[6px] border-sky-400 rounded-[2.5rem] overflow-hidden shadow-xl hover-float">
+                                    <img src="./assets/image/tentang-Visi/" alt="fotoVisi"
+                                        class="w-full aspect-[3/2] object-cover object-center">
+                                </div>
+                            </div>
+
+                            <div
+                                class="reveal delay-4 bg-white px-8 py-10 md:px-16 md:py-14 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.12)] w-full md:w-[60%] z-20 relative md:-ml-24 order-2 transition-all">
+                                <div
+                                    class="absolute -top-5 right-10 bg-sky-400 text-white px-10 py-2.5 rounded-2xl shadow-md fraunces font-semibold text-lg tracking-wide">
+                                    Visi & Misi
+                                </div>
+                                <div class="mt-4 space-y-6">
+                                    <div>
+                                        <h3 class="fraunces font-bold text-gray-800 text-lg mb-1">Visi</h3>
+                                        <p
+                                            class="mulish text-gray-600 text-sm md:text-base border-b border-gray-100 pb-4">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum molestiae
+                                            velit facere, unde perferendis eveniet esse provident accusamus et ipsum!
+                                            Consequuntur optio laborum, ipsam possimus sed commodi velit asperiores
+                                            itaque.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="fraunces font-bold text-gray-800 text-lg mb-1">Misi</h3>
+                                        <p class="mulish text-gray-600 text-sm md:text-base">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi
+                                            id? Perspiciatis magni quia alias quae voluptatum facilis reiciendis
+                                            repudiandae? Rem culpa exercitationem dolores. Perferendis itaque placeat
+                                            vero consequatur suscipit?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Layanan -->
+        <section id="layanan" class="py-24 xl:py-32 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Heading -->
+                <div class="text-left md:text-center mb-20 reveal">
+                    <img src="./assets/image/doodles/" class="block md:mx-auto w-32 xl:h-32 mb-6" alt="doodle1">
+
+                    <h2 class="fraunces text-3xl md:text-4xl font-semibold mb-4">
+                        Kami bisa melakukan banyak hal!
+                    </h2>
+
+                    <img src="./assets/image/doodles/2.svg" class="block md:mx-auto w-24 h-2 mb-3" alt="doodle2">
+                </div>
+
+                <!-- Grid Layanan -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-20">
+
+                    <!-- Item -->
+                    <div class="reveal delay-1">
+                        <img src="./assets/image/doodles/" class="w-32 h-32 mb-6" alt="doodle3">
+                        <h3 class="mulish text-xl font-bold mb-2">Umum</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Konsultasi, scaling, rontgen gigi, hingga perawatan gigi anak kami lakukan dengan cara yang
+                            nyaman dan ramah untuk semua usia.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-2">
+                        <img src="./assets/image/doodles/" class="w-38 h-32 mb-6" alt="doodle4">
+                        <h3 class="mulish text-xl font-bold mb-2">Perawatan Gigi</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Tambal gigi, perawatan saluran akar, crown, dan veneer untuk menjaga fungsi gigi sekaligus
+                            membuat senyum tetap sehat.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-3">
+                        <img src="./assets/image/doodles/" class="w-38 h-32 mb-6" alt="doodle5">
+                        <h3 class="mulish text-xl font-bold mb-2">Ortodontik</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Perawatan kawat gigi (behel) yang disesuaikan dengan kebutuhanmu untuk hasil yang rapi dan
+                            optimal.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-4">
+                        <img src="./assets/image/doodles/" class="h-32 mb-6" alt="doodle6">
+                        <h3 class="mulish text-xl font-bold mb-2">Estetika & Kosmetik</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Bleaching, gigi palsu, dan implan gigi untuk membantu senyummu terlihat lebih cerah, alami,
+                            dan
+                            percaya diri.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-5">
+                        <img src="./assets/image/doodles/" class="h-32 mb-6" alt="doodle7">
+                        <h3 class="mulish text-xl font-bold mb-2">Bedah Mulut</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Pencabutan gigi dan bedah mulut minor dilakukan dengan prosedur aman dan tenaga medis
+                            berpengalaman.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-6">
+                        <img src="./assets/image/doodles/" class="w-40 h-38" alt="doodle8">
+                        <h3 class="mulish text-xl font-bold mb-2">Dan masih banyak lagi!</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Penanganan penyakit mulut serta teledentistry untuk konsultasi yang lebih praktis dan mudah.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Keunggulan -->
+        <section id="keunggulan" class="pb-16 xl:pb-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Heading -->
+                <div class="text-left mb-20 reveal">
+                    <img src="./assets/image/doodles/9.svg" class="block w-54 h-54 mb-6" alt="doodle9">
+
+                    <h2 class="fraunces text-3xl md:text-4xl font-semibold mb-4">
+                        Mengapa harus memilih kami?
+                    </h2>
+                </div>
+
+                <!-- Grid Layanan -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-20">
+
+                    <!-- Item -->
+                    <div class="reveal delay-1">
+                        <img src="./assets/image/doodles/10.svg" class="w-24 h-24 mb-6" alt="doodle10">
+                        <h3 class="mulish text-xl font-bold mb-2">Tersertifikat</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Ditangani Dokter Gigi Bersertifikat Resmi. Keahlian Terpercaya, Hasil Maksimal.
+                            <button id="openCertificateModal"
+                                class="text-sky-400 hover:text-cyan-600 underline underline-offset-2 cursor-pointer">
+                                Lihat Sertifikat Kami
+                            </button>
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-2">
+                        <img src="./assets/image/doodles/11.svg" class="w-24 h-24 mb-6" alt="doodle11">
+                        <h3 class="mulish text-xl font-bold mb-2">20+ Tahun</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Lebih dari 20 Tahun Merawat Ribuan Senyum. Pengalaman yang Anda dapat Andalkan.
+                        </p>
+                    </div>
+
+                    <div class="reveal delay-3">
+                        <img src="./assets/image/doodles/12.svg" class="w-24 h-24 mb-6" alt="doodle12">
+                        <h3 class="mulish text-xl font-bold mb-2">Garansi</h3>
+                        <p class="mulish text-gray-500 text-sm leading-relaxed">
+                            Kami Jamin Hasil Perawatan Anda. Garansi Resmi untuk Ketenangan Anda.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dokter Spesialis -->
+        <section id="dokter" class="pb-16 xl:pb-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Heading -->
+                <div class="text-center mb-20 reveal pt-20">
+                    <img src="./assets/image/doodles/" class="block mx-auto w-46 h-46 mb-6" alt="doodle14">
+
+                    <h2 class="fraunces text-3xl md:text-4xl font-semibold mb-4">
+                        Para ahli di balik senyuman Anda
+                    </h2>
+
+                    <img src="./assets/image/doodles/" class="block mx-auto w-24 h-14 mb-3" alt="doodle13">
+                </div>
+
+                <!-- Dokter-dokter -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-20">
+
+                    <!-- Item -->
+                    <div class="reveal delay-1">
+                        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="group-1">
+                            <defs>
+                                <mask id="blob1">
+                                    <path
+                                        d="M136.697 9.84583C137.238 9.31569 137.508 9.05063 137.743 8.82982C150.246 -2.94327 169.754 -2.94327 182.257 8.82982C182.492 9.05063 182.762 9.31569 183.303 9.84583C183.628 10.1639 183.79 10.323 183.945 10.4703C191.945 18.1056 203.282 21.1433 214.028 18.5311C214.235 18.4807 214.456 18.4242 214.896 18.311C215.629 18.1224 215.996 18.0282 216.31 17.9542C233.024 14.0098 249.919 23.7642 254.86 40.2114C254.953 40.5199 255.055 40.8847 255.258 41.6143C255.38 42.0522 255.442 42.2711 255.502 42.4758C258.613 53.0884 266.912 61.3875 277.524 64.4985C277.729 64.5585 277.948 64.6195 278.386 64.7417C279.115 64.9452 279.48 65.0469 279.789 65.1396C296.236 70.0808 305.99 86.9759 302.046 103.69C301.972 104.004 301.878 104.371 301.689 105.104C301.576 105.544 301.519 105.765 301.469 105.972C298.857 116.718 301.894 128.055 309.53 136.055C309.677 136.21 309.836 136.372 310.154 136.697C310.684 137.238 310.949 137.508 311.17 137.743C322.943 150.246 322.943 169.754 311.17 182.257C310.949 182.492 310.684 182.762 310.154 183.303C309.836 183.628 309.677 183.79 309.53 183.945C301.894 191.945 298.857 203.282 301.469 214.028C301.519 214.235 301.576 214.456 301.689 214.896C301.878 215.629 301.972 215.996 302.046 216.31C305.99 233.024 296.236 249.919 279.789 254.86C279.48 254.953 279.115 255.055 278.386 255.258C277.948 255.381 277.729 255.442 277.524 255.502C266.912 258.613 258.613 266.912 255.502 277.524C255.442 277.729 255.381 277.948 255.258 278.386C255.055 279.115 254.953 279.48 254.86 279.789C249.919 296.236 233.024 305.99 216.31 302.046C215.996 301.972 215.629 301.878 214.896 301.689C214.456 301.576 214.235 301.519 214.028 301.469C203.282 298.857 191.945 301.894 183.945 309.53C183.79 309.677 183.628 309.836 183.303 310.154C182.762 310.684 182.492 310.949 182.257 311.17C169.754 322.943 150.246 322.943 137.743 311.17C137.508 310.949 137.238 310.684 136.697 310.154C136.372 309.836 136.21 309.677 136.055 309.53C128.055 301.894 116.718 298.857 105.972 301.469C105.765 301.519 105.544 301.576 105.104 301.689C104.371 301.878 104.004 301.972 103.69 302.046C86.9759 305.99 70.0808 296.236 65.1396 279.789C65.0469 279.48 64.9452 279.115 64.7417 278.386C64.6195 277.948 64.5585 277.729 64.4985 277.524C61.3875 266.912 53.0884 258.613 42.4758 255.502C42.2711 255.442 42.0522 255.38 41.6143 255.258C40.8847 255.055 40.5199 254.953 40.2114 254.86C23.7642 249.919 14.0098 233.024 17.9542 216.31C18.0282 215.996 18.1224 215.629 18.311 214.896C18.4242 214.456 18.4807 214.235 18.5311 214.028C21.1433 203.282 18.1056 191.945 10.4703 183.945C10.323 183.79 10.1639 183.628 9.84583 183.303C9.31569 182.762 9.05063 182.492 8.82982 182.257C-2.94327 169.754 -2.94327 150.246 8.82982 137.743C9.05063 137.508 9.31569 137.238 9.84583 136.697C10.1639 136.372 10.323 136.21 10.4703 136.055C18.1056 128.055 21.1433 116.718 18.5311 105.972C18.4807 105.765 18.4242 105.544 18.311 105.104C18.1224 104.371 18.0282 104.004 17.9542 103.69C14.0098 86.9759 23.7642 70.0808 40.2114 65.1396C40.5199 65.0469 40.8847 64.9452 41.6143 64.7417C42.0522 64.6195 42.2711 64.5585 42.4758 64.4985C53.0884 61.3875 61.3875 53.0884 64.4985 42.4758C64.5585 42.2711 64.6195 42.0522 64.7417 41.6143C64.9452 40.8847 65.0469 40.5199 65.1396 40.2114C70.0808 23.7642 86.9759 14.0098 103.69 17.9542C104.004 18.0282 104.371 18.1224 105.104 18.311C105.544 18.4242 105.765 18.4807 105.972 18.5311C116.718 21.1433 128.055 18.1056 136.055 10.4703C136.21 10.323 136.372 10.1639 136.697 9.84583Z"
+                                        fill="white" class="path-1" />
+                                </mask>
+                            </defs>
+                            <image href="./assets/image/ahli/1.jpg" x="0" y="0" width="320" height="320"
+                                preserveAspectRatio="xMidYMid slice" mask="url(#blob1)" />
+                        </svg>
+                        <!--<img src="./assets/image/ahli/1.png" class="w-full h-auto aspect-square mb-6" alt="Seseorang">-->
+                        <h4 class="mulish text-gray-500">Ortodontik</h4>
+                        <h3 class="mulish md:text-xl font-bold mb-2">
+                            <span class="text-gray-400">drg.</span> Rizki Permana
+                            <span class="bg-sky-400 text-white px-1 rounded-md inline-block whitespace-nowrap">
+                                Sp.Ort
+                            </span>
+                        </h3>
+                        <ul class="mulish text-gray-500 text-sm leading-relaxed">
+                            <li>rizkyp@smilebox.com</li>
+                            <li class="tabluar">+62 123 1234 1234</li>
+                            <button class="openDoctorModal text-sky-400 underline cursor-pointer" data-prefix="drg."
+                                data-name="Rizki Permana" data-spesialis="Sp.Ort"
+                                data-role="Dokter Gigi Spesialis Ortodonti" data-edu="Universitas Indonesia"
+                                data-exp="10+ Tahun" data-desc="Berpengalaman dalam perawatan ortodonti modern."
+                                data-img="./assets/image/ahli/1.jpg">
+                                Lihat Biodata
+                            </button>
+
+                        </ul>
+                    </div>
+
+                    <div class="reveal delay-2">
+                        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="group-2">
+                            <defs>
+                                <mask id="blob2">
+                                    <path
+                                        d="M249.397 249.754C261.485 237.666 265.573 220.608 261.663 205.157C277.124 209.086 294.202 205.001 306.3 192.902C324.567 174.636 324.567 145.02 306.3 126.754C294.273 114.727 277.325 110.619 261.936 114.43C265.368 99.2864 261.188 82.7663 249.397 70.9753C237.282 58.8601 220.174 54.7804 204.696 58.736C208.798 43.1705 204.747 25.9026 192.544 13.6997C174.278 -4.56657 144.662 -4.56657 126.396 13.6997C114.266 25.83 110.191 42.9655 114.172 58.4584C99.001 54.9862 82.4346 59.1585 70.6178 70.9753C58.8257 82.7673 54.6462 99.2892 58.0792 114.434C42.6865 110.616 25.7312 114.723 13.6997 126.754C-4.56657 145.02 -4.56657 174.636 13.6997 192.902C25.8026 205.005 42.8879 209.089 58.3531 205.153C54.4405 220.605 58.5288 237.665 70.6178 249.754C82.3849 261.521 98.8618 265.708 113.98 262.314C110.328 277.602 114.467 294.371 126.396 306.3C144.662 324.567 174.278 324.567 192.544 306.3C204.544 294.301 208.661 277.403 204.894 262.043C220.32 265.914 237.333 261.817 249.397 249.754Z"
+                                        fill="white" class="path-2" />
+                                </mask>
+                            </defs>
+                            <image href="./assets/image/ahli/2.jpg" x="0" y="0" width="320" height="320"
+                                preserveAspectRatio="xMidYMid slice" mask="url(#blob2)" />
+                        </svg>
+                        <!--<img src="./assets/image/ahli/2.png" class="w-full h-auto aspect-square mb-6" alt="Seseorang">-->
+                        <h4 class="mulish text-gray-500">Bedah Mulut</h4>
+                        <h3 class="mulish md:text-xl font-bold mb-2">
+                            <span class="text-gray-400">drg.</span> Arief Wibowo
+                            <span class="bg-sky-400 text-white px-1 rounded-md inline-block whitespace-nowrap">
+                                Sp.BM
+                            </span>
+                        </h3>
+                        <ul class="mulish text-gray-500 text-sm leading-relaxed">
+                            <li>ariefwbw@smilebox.com</li>
+                            <li class="tabluar">+62 123 1234 1234</li>
+                            <button class="openDoctorModal text-sky-400 underline cursor-pointer" data-prefix="drg."
+                                data-name="Arief Wibowo" data-spesialis="Sp.BM" data-role="Dokter Spesialis Bedah Mulut"
+                                data-exp="12 Tahun" data-edu="Universitas Airlangga"
+                                data-desc="Ahli dalam tindakan bedah katarak modern."
+                                data-img="./assets/image/ahli/2.jpg">
+                                Lihat Biodata
+                            </button>
+                        </ul>
+                    </div>
+
+                    <div class="reveal delay-3 overflow-visible">
+                        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="group-3 overflow-visible">
+                            <defs>
+                                <mask id="blob3">
+                                    <path
+                                        d="M310 258.727C310 264.96 310 268.076 309.689 270.696C307.259 291.14 291.14 307.259 270.696 309.689C268.076 310 264.96 310 258.727 310H51.2732C45.0405 310 41.9242 310 39.3043 309.689C18.8596 307.259 2.74071 291.14 0.311326 270.696C9.86457e-06 268.076 9.61297e-06 264.96 9.06809e-06 258.727L0 155C-7.48375e-06 69.3959 69.3958 7.48375e-06 155 0C240.604 -7.48375e-06 310 69.3958 310 155V258.727Z"
+                                        fill="white" class="path-3" />
+                                </mask>
+                            </defs>
+                            <image href="./assets/image/ahli/3.jpg" x="-50" y="-40" width="400" height="400"
+                                preserveAspectRatio="xMidYMid slice" mask="url(#blob3)" />
+                        </svg>
+                        <!--<img src="./assets/image/ahli/3.png" class="w-full h-auto aspect-square mb-6" alt="Seseorang">-->
+                        <h4 class="mulish text-gray-500">Konservasi Gigi</h4>
+                        <h3 class="mulish md:text-xl font-bold mb-2">
+                            <span class="text-gray-400">drg.</span> Siti Rahma
+                            <span class="bg-sky-400 text-white px-1 rounded-md inline-block whitespace-nowrap">
+                                Sp.KG
+                            </span>
+                        </h3>
+                        <ul class="mulish text-gray-500 text-sm leading-relaxed">
+                            <li>sitirama@smilebox.com</li>
+                            <li class="tabluar">+62 123 1234 1234</li>
+                            <button class="openDoctorModal text-sky-400 underline cursor-pointer" data-prefix="drg."
+                                data-name="Siti Rahma" data-spesialis="Sp.KG"
+                                data-role="Dokter Spesialis Konservasi Gigi" data-exp="8 Tahun"
+                                data-edu="Universitas Gadjah Mada" data-desc="Fokus pada pelayanan Konservasi Gigi."
+                                data-img="./assets/image/ahli/3.jpg">
+                                Lihat Biodata
+                            </button>
+                        </ul>
+                    </div>
+
+                    <div class="reveal delay-4">
+                        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="group-4 overflow-visible">
+                            <defs>
+                                <mask id="blob4">
+                                    <path
+                                        d="M0 79.3221C0 35.5137 35.5137 0 79.3221 0H222.928C266.736 0 302.25 35.5137 302.25 79.3221C302.25 115.45 278.097 145.937 245.057 155.516C244.842 155.579 244.692 155.776 244.692 156C244.692 156.224 244.842 156.421 245.057 156.484C278.097 166.063 302.25 196.55 302.25 232.678C302.25 276.486 266.736 312 222.928 312H79.3221C35.5137 312 0 276.486 0 232.678C0 196.785 23.8388 166.461 56.547 156.674C56.845 156.585 57.0514 156.311 57.0514 156C57.0514 155.689 56.845 155.415 56.547 155.326C23.8388 145.539 0 115.214 0 79.3221Z"
+                                        fill="white" class="path-4" />
+                                </mask>
+                            </defs>
+                            <image href="./assets/image/ahli/4.jpg" x="-40" y="-10" width="400" height="400"
+                                preserveAspectRatio="xMidYMid slice" mask="url(#blob4)" />
+                        </svg>
+                        <!--<img src="./assets/image/ahli/4.png" class="w-full h-auto aspect-square mb-6" alt="Seseorang">-->
+                        <h4 class="mulish text-gray-500">Prostodonsia</h4>
+                        <h3 class="mulish md:text-xl font-bold mb-2">
+                            <span class="text-gray-400">drg.</span> Budi Santoso
+                            <span class="bg-sky-400 text-white px-1 rounded-md inline-block whitespace-nowrap">
+                                Sp.Pros
+                            </span>
+                        </h3>
+                        <ul class="mulish text-gray-500 text-sm leading-relaxed">
+                            <li>budists@smilebox.com</li>
+                            <li class="tabluar">+62 123 1234 1234</li>
+                            <button class="openDoctorModal text-sky-400 underline cursor-pointer" data-prefix="drg."
+                                data-name="Budi Santoso" data-spesialis="Sp.Pros"
+                                data-role="Dokter Gigi Spesialis Prostodonsia" data-exp="7 Tahun"
+                                data-edu="Universitas Diponegoro"
+                                data-desc="Berpengalaman dalam penanganan Prostodonsia."
+                                data-img="./assets/image/ahli/4.jpg">
+                                Lihat Biodata
+                            </button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni -->
+        <section id="testimoni" class="bg-white py-16 xl:py-24">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Heading -->
+                <h2 class="text-4xl font-bold text-gray-900 mb-12 reveal delay-1">
+                    Testimoni
+                </h2>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Card besar biru -->
+                    <div
+                        class="bg-sky-400 text-white rounded-2xl p-8 md:row-span-2 flex flex-col justify-between reveal delay-2">
+                        <p class="text-2xl leading-relaxed font-medium">
+                            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti libero, impedit fuga
+                            aliquid neque nesciunt eaque sunt ipsam repellendus incidunt fugit quod laudantium voluptas
+                            illo dolor, est quis deserunt minima.”
+                        </p>
+
+                        <div class="flex items-center justify-between mt-8">
+                            <div>
+                                <p class="font-semibold">Andi Pratama</p>
+                                <p class="text-sm text-white-400">Pasien ...</p>
+                            </div>
+                            <img src="./assets/image/testimoni/" class="w-12 h-12 rounded-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Card putih -->
+                    <div class="border rounded-2xl p-6 flex flex-col justify-between reveal delay-3">
+                        <p class="text-gray-700">
+                            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti libero, impedit fuga
+                            aliquid neque nesciunt eaque sunt ipsam repellendus incidunt fugit quod laudantium voluptas
+                            illo dolor, est quis deserunt minima.”
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <p class="font-semibold text-gray-900">Siti Rahmawati</p>
+                                <p class="text-sm text-gray-500">Pasien ...</p>
+                            </div>
+                            <img src="./assets/image/testimoni/" class="w-10 h-10 rounded-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Card putih -->
+                    <div class="border rounded-2xl p-6 flex flex-col justify-between reveal delay-4">
+                        <p class="text-gray-700">
+                            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti libero, impedit fuga
+                            aliquid neque nesciunt eaque sunt ipsam repellendus incidunt fugit quod laudantium voluptas
+                            illo dolor, est quis deserunt minima.”
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <p class="font-semibold text-gray-900">Dimas Arya</p>
+                                <p class="text-sm text-gray-500">Pasien ...</p>
+                            </div>
+                            <img src="./assets/image/testimoni/" class="w-10 h-10 rounded-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Card putih (bawah kiri) -->
+                    <div class="border rounded-2xl p-6 flex flex-col justify-between reveal delay-5">
+                        <p class="text-gray-700">
+                            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti libero, impedit fuga
+                            aliquid neque nesciunt eaque sunt ipsam repellendus incidunt fugit quod laudantium voluptas
+                            illo dolor, est quis deserunt minima.”
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <p class="font-semibold text-gray-900">Nabila Putri</p>
+                                <p class="text-sm text-gray-500">Orang Tua Pasien</p>
+                            </div>
+                            <img src="./assets/image/testimoni/" class="w-10 h-10 rounded-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Card putih (bawah kanan) -->
+                    <div class="border rounded-2xl p-6 flex flex-col justify-between reveal delay-6">
+                        <p class="text-gray-700">
+                            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti libero, impedit fuga
+                            aliquid neque nesciunt eaque sunt ipsam repellendus incidunt fugit quod laudantium voluptas
+                            illo dolor, est quis deserunt minima.”
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <p class="font-semibold text-gray-900">Rizky Maulana</p>
+                                <p class="text-sm text-gray-500">Pasien ...</p>
+                            </div>
+                            <img src="./assets/image/testimoni/" class="w-10 h-10 rounded-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Detail Layanan -->
+        <section id="layanan-carousel" class="carousel-container relative w-full overflow-hidden bg-white">
+
+            <div id="service-track" class="flex transition-transform duration-700 ease-in-out">
+
+                <div id="layanan-umum" class="min-w-full py-32 pl-8 md:pl-24 pr-8 flex justify-center bg-white">
+                    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                        <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                            <div class="mb-10">
+                                <h2 class="fraunces font-bold text-4xl text-black mb-10">Layanan umum</h2>
+
+                                <div class="block md:hidden mb-12">
+                                    <div class="relative w-full aspect-[16/10] p-2">
+                                        <img src="./assets/image/layanan-umum/layanan1.svg" alt="foto Layanan Umum"
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-6 text-lg text-slate-800">
+                                    <div class="grid grid-cols-[140px_1fr] items-start">
+                                        <span class="mulish font-bold">Dokter :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish flex items-center gap-2">Dr. Faisal Ahmad</p>
+                                            <p class="mulish">Dr. Sharmin Sultana</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start">
+                                        <span class="mulish font-bold">Jadwal :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish flex items-center gap-2">Senin - Jum'at</p>
+                                            <p class="mulish">09:00 - 16:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start">
+                                        <span class="mulish font-bold">Biaya :</span>
+                                        <p class="mulish">Gratis - Rp 150.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button
+                                    class="openBookingModal bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic cursor-pointer mulish"
+                                    data-layanan="Layanan Umum" data-jadwal="Senin - Jum'at"
+                                    data-waktu="09:00 - 16:00 WIB">
+                                    Reserfasi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                                <img src="./assets/image/layanan-umum/layanan1.svg"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="perawatan-gigi" class="min-w-full py-32 pl-8 md:pl-24 pr-8 flex justify-center bg-white">
+                    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                        <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                            <div class="mb-10">
+                                <h2 class="fraunces font-bold text-4xl text-black mb-10">Perawatan Gigi</h2>
+                                <div class="block md:hidden mb-12">
+                                    <div class="relative w-full aspect-[16/10] p-2">
+                                        <img src="./assets/image/layanan-umum/layanan2.svg" alt="foto Layanan Umum"
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                                <div class="space-y-6 text-lg text-slate-800">
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Dokter :</span>
+                                        <p class="mulish">Dr. Anisa Bahar</p>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Jadwal :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish">Sabtu - Minggu</p>
+                                            <p class="mulish">10:00 - 18:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Biaya :</span>
+                                        <p class="mulish">Rp 200.000 - Rp 500.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button
+                                    class="openBookingModal bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic cursor-pointer Reserfasi"
+                                    data-layanan="Perawatan Gigi" data-jadwal="Sabtu - Minggu"
+                                    data-waktu="10:00 - 18:00 WIB">
+                                    Reserfasi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                                <img src="./assets/image/layanan-umum/layanan2.svg"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ortodontik" class="min-w-full py-32 pl-8 md:pl-24 pr-8 flex justify-center bg-white">
+                    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                        <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                            <div class="mb-10">
+                                <h2 class="fraunces font-bold text-4xl text-black mb-10">Ortodontik</h2>
+                                <div class="block md:hidden mb-12">
+                                    <div class="relative w-full aspect-[16/10] p-2">
+                                        <img src="./assets/image/layanan-umum/layanan3.svg" alt="foto Layanan Umum"
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                                <div class="space-y-6 text-lg text-slate-800">
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Dokter :</span>
+                                        <p class="mulish">Dr. Budi Santoso, Sp.Ort</p>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Jadwal :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish">Senin & Rabu</p>
+                                            <p class="mulish">13:00 - 20:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Biaya :</span>
+                                        <p class="mulish">Mulai dari Rp 5.000.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button
+                                    class="openBookingModal bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic cursor-pointer Reserfasi"
+                                    data-layanan="Ortodontik" data-jadwal="Senin & Rabu" data-waktu="10:00 - 18:00 WIB">
+                                    Reserfasi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                                <img src="./assets/image/layanan-umum/layanan3.svg"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="estetika-kosmetik" class="min-w-full py-32 pl-8 md:pl-24 pr-8 flex justify-center bg-white">
+                    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                        <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                            <div class="mb-10">
+                                <h2 class="fraunces font-bold text-4xl text-black mb-10">Estetika & Kosmetik</h2>
+                                <div class="block md:hidden mb-12">
+                                    <div class="relative w-full aspect-[16/10] p-2">
+                                        <img src="./assets/image/layanan-umum/layanan4.svg" alt="foto Layanan Umum"
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                                <div class="space-y-6 text-lg text-slate-800">
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Dokter :</span>
+                                        <p class="mulish">Dr. Citra Lestari</p>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Jadwal :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish">Jum'at</p>
+                                            <p class="mulish">09:00 - 15:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Biaya :</span>
+                                        <p class="mulish">Rp 500.000 - Rp 2.500.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button
+                                    class="openBookingModal bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic cursor-pointer Reserfasi"
+                                    data-layanan="Estetika & Kosmetik" data-jadwal="Jum'at"
+                                    data-waktu="09:00 - 15:00 WIB">
+                                    Reserfasi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                                <img src="./assets/image/layanan-umum/layanan4.svg"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bedah-mulut" class="min-w-full py-32 pl-8 md:pl-24 pr-8 flex justify-center bg-white">
+                    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                        <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                            <div class="mb-10">
+                                <h2 class="fraunces font-bold text-4xl text-black mb-10">Bedah Mulut</h2>
+                                <div class="block md:hidden mb-12">
+                                    <div class="relative w-full aspect-[16/10] p-2">
+                                        <img src="./assets/image/layanan-umum/layanan5.svg" alt="foto Layanan Umum"
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                                <div class="space-y-6 text-lg text-slate-800">
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Dokter :</span>
+                                        <p class="mulish">Dr. Dermawan, Sp.BM</p>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Jadwal :</span>
+                                        <div class="leading-relaxed">
+                                            <p class="mulish">Kamis</p>
+                                            <p class="mulish">16:00 - 21:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-[140px_1fr] items-start"><span
+                                            class="mulish font-bold">Biaya :</span>
+                                        <p class="mulish">Tergantung Tindakan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button
+                                    class="openBookingModal bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic cursor-pointer Reserfasi"
+                                    data-layanan="Bedah Mulut" data-jadwal="Kamis"
+                                    data-waktu="16:00 - 21:00 WIB">
+                                    Reserfasi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                                <img src="./assets/image/layanan-umum/layanan5.svg"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-nav-container reveal">
+                <button onclick="moveSlide(-1)" class="btn-carousel-nav">❮</button>
+                <button onclick="moveSlide(1)" class="btn-carousel-nav">❯</button>
+            </div>
+        </section>
+
+
+        <!-- Kontak -->
+        <section id="kontak" class="bg-white py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-14">
+
+                    <!-- KIRI : ICON / ILUSTRASI -->
+                    <div class="flex md:justify-center reveal">
+                        <img src="./assets/image/doodles/19.svg" alt="Kontak Smilebox"
+                            class="w-[180px] md:w-[180px] xl:w-[200px]">
+                    </div>
+
+                    <!-- KANAN : TEKS & INFO -->
+                    <div class="space-y-10">
+
+                        <!-- Heading -->
+                        <h2 class="fraunces text-3xl md:text-3xl lg:text-4xl font-semibold mb-6 reveal">
+                            Anda memiliki Pertanyaan?<br>
+                            Kami memiliki Jawabannya!
+                        </h2>
+
+                        <!-- Kontak List -->
+                        <div class="space-y-6">
+
+                            <!-- WhatsApp / Telepon -->
+                            <div class="flex items-center gap-5 reveal">
+                                <img src="./assets/image/doodles/20.svg" class="w-10 h-10" alt="doodle20">
+                                <p class="mulish text-lg font-semibold text-gray-800">
+                                    0812-3456-7890
+                                </p>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-5 reveal">
+                                <img src="./assets/image/doodles/21.svg" class="w-10 h-10" alt="doodle21">
+                                <p class="mulish text-lg font-semibold text-gray-800">
+                                    help@smilebox.com
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="CTA" class="py-16 px-4 flex justify-center">
+            <div class="relative max-w-6xl w-full bg-white rounded-[32px]
+               px-8 py-16 md:py-20 text-center
+               border-2 md:border-[3px] border-sky-400
+               reveal no-reveal-hover">
+
+                <!-- Content -->
+                <div class="relative z-10 reveal delay-2">
+                    <h2 class="fraunces text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
+                        Gigi Sehat, Hati Senang. Cus Booking Sekarang!
+                    </h2>
+
+                    <p class="mulish text-gray-600 mb-8 max-w-xl mx-auto">
+                        Dari merapikan, membersihkan, maupun hanya konsultasi
+                    </p>
+
+                    <a href="#" class="inline-flex items-center justify-center
+                       px-8 py-3 rounded-full
+                       bg-sky-400 text-white mulish font-semibold
+                       shadow-lg hover:bg-sky-500
+                       hover:scale-105 active:scale-95
+                       transition-all duration-300">
+                        Jadwalkan Pertemuan
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <img class="my-20 h-[200px] md:h-auto w-auto md:w-full" src="./assets/image/doodles/hook-bottom.svg" alt="">
+        </section>
+
+        <!--Footer-->
+        <footer id="footer" class="mulish w-full bg-white">
+            <!-- Menu Groups -->
+            <div class="px-4 py-8 md:px-8 lg:px-16">
+                <div class="flex flex-wrap justify-between gap-6 md:gap-8">
+
+                    <!-- Perusahaan -->
+                    <div class="w-full sm:w-[48%] lg:w-auto reveal">
+                        <img src="./assets/image/doodles/15.svg" class="w-24 h-24 mb-6" alt="doodle15">
+                        <div class="flex items-center gap-2 mb-3">
+                            <h3 class="font-bold text-gray-800">Perusahaan</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li><a href="#tentang" class="text-sky-400 hover:text-cyan-600 text-sm">Tentang Kami</a>
+                            </li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Karir</a></li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Terdapat Kendala -->
+                    <div class="w-full sm:w-[48%] lg:w-auto reveal">
+                        <img src="./assets/image/doodles/16.svg" class="w-34 h-24 mb-6" alt="doodle16">
+                        <div class="flex items-center gap-2 mb-3">
+                            <h3 class="font-bold text-gray-800">Terdapat Kendala?</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Dukungan Darurat</a></li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">FAQ</a></li>
+                            <li><a href="mailto:customerservice@smilebox.com"
+                                    class="text-sky-400 hover:text-cyan-600 text-sm">customerservice@smilebox.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Layanan -->
+                    <div class="w-full sm:w-[48%] lg:w-auto reveal">
+                        <img src="./assets/image/doodles/17.svg" class="w-24 h-24 mb-6" alt="doodle17">
+                        <div class="flex items-center gap-2 mb-3">
+                            <h3 class="font-bold text-gray-800">Layanan</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li><a href="#layanan-carousel" class="text-sky-400 hover:text-cyan-600 text-sm">Umum</a>
+                            </li>
+                            <li><a href="#layanan-carousel" class="text-sky-400 hover:text-cyan-600 text-sm">Perawatan
+                                    Gigi</a></li>
+                            <li><a href="#layanan-carousel"
+                                    class="text-sky-400 hover:text-cyan-600 text-sm">Ortodontik</a></li>
+                            <li><a href="#layanan-carousel" class="text-sky-400 hover:text-cyan-600 text-sm">Estetika &
+                                    Kosmetik</a>
+                            </li>
+                            <li><a href="#layanan-carousel" class="text-sky-400 hover:text-cyan-600 text-sm">Bedah
+                                    Mulut</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="w-full sm:w-[48%] lg:w-auto reveal">
+                        <img src="./assets/image/doodles/18.svg" class="w-20 h-20 mb-6" alt="doodle18">
+                        <div class="flex items-center gap-2 mb-3">
+                            <h3 class="font-bold text-gray-800">Legal</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li><a href="#keunggulan" class="text-sky-400 hover:text-cyan-600 text-sm">Sertifikat</a>
+                            </li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Kebijakan Privasi</a></li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Aksesibilitas</a></li>
+                            <li><a href="#" class="text-sky-400 hover:text-cyan-600 text-sm">Syarat & Ketentuan</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Logo & Newsletter -->
+            <div class="px-4 py-8 md:px-8 border-t border-gray-200 reveal no-reveal-hover">
+                <div class="flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6">
+                    <!-- Logo -->
+                    <div class="w-full lg:w-auto">
+                        <img src="./assets/image/logo-word.svg" alt="">
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="w-full lg:w-1/2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.065368510401!2d109.24925453011544!3d-7.435467118480138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e9d1768e4d1%3A0x959269c10818fa0c!2sSMK%20Telkom%20Purwokerto!5e0!3m2!1sen!2sid!4v1766927310120!5m2!1sen!2sid"
+                            class="w-full h-48 rounded border-0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="p-5">
+                <div class="bg-sky-400 p-5">
+                    <p class="text-right text-white font-bold">
+                        Tim Panasea · © 2025-2026, All rights reserved
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!-- CHATBOT WIDGET -->
+        <div id="chatWidget"
+            class="fixed bottom-6 right-6 z-[100] flex flex-col items-end pointer-events-none reveal no-reveal-hover">
+
+            <!-- CHAT WINDOW (Hidden by default) -->
+            <div id="chatWindow"
+                class="mb-4 w-[350px] md:w-[400px] h-[500px] bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl flex flex-col overflow-hidden opacity-0 translate-y-10 pointer-events-auto transition-all duration-300 origin-bottom-right scale-95"
+                style="display: none;">
+
+                <!-- Header -->
+                <div class="p-5 bg-sky-400 backdrop-blur-md flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                            <img src="./assets/image/logo.png" alt="Smilebox Logo AI" class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm" data-lang="chat_title">Smilebox Chatbot AI</h4>
+                            <span class="text-white text-xs flex items-center gap-1">
+                                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span
+                                    data-lang="chat_status">Online</span>
+                            </span>
+                        </div>
+                    </div>
+                    <button id="closeChat" class="text-white/80 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Messages Area -->
+                <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-4 scroll-smooth">
+                    <!-- Welcome Message -->
+                    <div class="flex gap-3" id="chatWelcome">
+                        <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0">
+                            <img src="./assets/image/logo.png" alt="Smilebox Logo AI" class="w-6 h-6" />
+                        </div>
+                        <div class="bg-white/10 border border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-gray-800 backdrop-blur-sm self-start max-w-[85%]"
+                            data-lang="chat_welcome">
+                            Halo! Saya asisten pintar Smilebox. siap bantu kamu seputar perawatan gigi dan senyumanmu.
+                            😁
+                        </div>
+                    </div>
+                    <!-- Suggested Chips -->
+                    <div class="flex flex-wrap gap-2 pl-11" id="chatChips">
+                        <button
+                            class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                            data-lang="chat_chip_1">Behel Gigi</button>
+                        <button
+                            class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                            data-lang="chat_chip_2">Tips Menjaga gigi</button>
+                        <button
+                            class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                            data-lang="chat_chip_3">Jadwal Klinik</button>
+                        <button
+                            class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                            data-lang="chat_chip_3">layanan Smilebox</button>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="p-4 bg-white/5 border-t border-white/10 backdrop-blur-md">
+                    <form id="chatForm" class="flex gap-2">
+                        <input type="text" id="chatInput" data-lang-placeholder="chat_placeholder"
+                            class="flex-1 bg-white/20 border border-white/20 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-sky-400 focus:bg-white/40 transition-all placeholder:text-gray-500 text-gray-800">
+                        <button type="submit"
+                            class="w-10 h-10 rounded-full bg-sky-400 flex items-center justify-center text-white hover:bg-sky-400 transition-all shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:scale-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 ml-0.5">
+                                <path
+                                    d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- TOGGLE BUTTON -->
+            <button id="toggleChat"
+                class="w-16 h-16 rounded-full bg-sky-400 shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 pointer-events-auto border-4 border-white transition-all duration-300 ease-out">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Modal Sertifikat -->
+        <div id="certificateModal"
+            class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/50 backdrop-blur-sm">
+            <div
+                class="relative bg-white rounded-xl shadow-xl w-full max-w-md md:max-w-2xl xl:max-w-4xl max-h-[90vh] mx-4 p-6 animate-fadeIn overflow-auto">
+
+                <!-- Close Button -->
+                <button id="closeCertificateModal"
+                    class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl cursor-pointer"
+                    aria-label="Tutup">
+                    &times;
+                </button>
+
+                <!-- Title -->
+                <h3 class="mulish text-lg font-bold mb-4">
+                    Sertifikat Dokter Gigi Smilebox
+                </h3>
+
+                <!-- Image -->
+                <img src="./assets/image/sertifikat/sertifikat klinik.png" alt="Sertifikat Smilebox"
+                    class="w-full max-h-[70vh] object-contain rounded-lg">
+            </div>
+        </div>
+
+        <!-- Modal Dokter -->
+        <div id="doctorModal"
+            class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/60 backdrop-blur-md">
+
+            <!-- Modal Card -->
+            <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-3xl mx-4 overflow-hidden animate-fadeIn">
+
+                <!-- Close Button -->
+                <button id="closeDoctorModal"
+                    class="absolute top-4 right-4 text-gray-600 hover:text-gray-700 text-2xl cursor-pointer">
+                    &times;
+                </button>
+
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-sky-600 to-sky-400 px-8 py-10 text-white">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <img id="doctorImg" class="w-36 h-36 rounded-full border-4 border-white shadow-lg object-cover"
+                            src="" alt="Dokter">
+
+                        <div class="text-center md:text-left">
+                            <h3 id="doctorName" class="text-2xl font-bold mulish"></h3>
+                            <p id="doctorRole" class="text-sm opacity-90 mt-1 mulish"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="p-8 grid md:grid-cols-2 gap-8 mulish">
+
+                    <!-- Info -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Informasi Dokter</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex gap-2">
+                                <span class="font-semibold w-28">Pendidikan</span>
+                                <span id="doctorEdu"></span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="font-semibold w-28">Pengalaman</span>
+                                <span id="doctorExp"></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Profil Singkat</h4>
+                        <p id="doctorDesc" class="text-sm text-gray-600 leading-relaxed"></p>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="bg-gray-50 px-8 py-5 flex justify-end">
+                    <button id="closeDoctorModalFooter"
+                        class="px-6 py-2 rounded-lg bg-sky-600 text-white text-sm hover:bg-sky-700 transition cursor-pointer">
+                        Tutup
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal Booking -->
+        <div id="bookingModal"
+            class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/60 backdrop-blur-sm">
+
+            <div class="bg-white rounded-2xl w-full max-w-xl p-8 relative mulish">
+
+                <!-- Close -->
+                <button id="closeBookingModal"
+                    class="absolute top-4 right-4 text-2xl text-gray-400 hover:text-gray-700 cursor-pointer">
+                    &times;
+                </button>
+
+                <h3 class="text-2xl font-bold mb-6">Form Janji Temu</h3>
+
+                <form id="bookingForm" class="space-y-4">
+                    <!-- Layanan -->
+                    <div>
+                        <label class="text-sm font-semibold">Layanan</label>
+                        <input id="formLayanan" type="text" class="w-full border rounded-lg px-4 py-2 bg-gray-100"
+                            readonly>
+                    </div>
+
+                    <!-- Nama -->
+                    <div>
+                        <label class="text-sm font-semibold">Nama</label>
+                        <input type="text" placeholder="Nama lengkap" class="w-full border rounded-lg px-4 py-2"
+                            required>
+                    </div>
+
+                    <!-- Nomor WhatsApp -->
+                    <div>
+                        <label class="text-sm font-semibold">Nomor WhatsApp Aktif</label>
+                        <input id="formWhatsapp" type="tel" placeholder="08xxxxxxxxxx"
+                            class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#00c2ff]" required>
+                    </div>
+
+                    <!-- Jadwal -->
+                    <div>
+                        <label class="text-sm font-semibold">Jadwal</label>
+                        <input id="formJadwal" type="text" class="w-full border rounded-lg px-4 py-2 bg-gray-100"
+                            readonly>
+                    </div>
+
+                    <!-- Waktu -->
+                    <div>
+                        <label class="text-sm font-semibold">Waktu</label>
+                        <input id="formWaktu" type="text" class="w-full border rounded-lg px-4 py-2 bg-gray-100"
+                            readonly>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#00c2ff] hover:bg-[#00ace6] text-white py-3 rounded-lg font-bold cursor-pointer">
+                        Kirim
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal Sukses Booking -->
+        <div id="successModal"
+            class="fixed inset-0 z-[1000] hidden items-center justify-center bg-black/60 backdrop-blur-sm">
+
+            <div class="bg-white rounded-2xl max-w-md w-full p-8 text-center animate-fadeIn">
+
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-2">Perjanjian Berhasil</h3>
+                <p class="text-gray-600 mb-6">
+                    Terima kasih<br>
+                    Tim kami akan menghubungi Anda melalui WhatsApp.
+                </p>
+
+                <button id="closeSuccessModal"
+                    class="bg-[#00c2ff] hover:bg-[#00ace6] text-white px-8 py-2 rounded-full font-semibold">
+                    Tutup
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

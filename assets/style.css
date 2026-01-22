@@ -1,0 +1,282 @@
+.mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 0;
+}
+
+.navbar {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.semi-circle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+  background-color: green;
+}
+
+/* ===== Scroll Reveal Animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay halus */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+.delay-6 {
+  transition-delay: 0.6s;
+}
+
+/* Hover micro-interaction */
+.reveal img {
+  transition: transform 0.3s ease;
+}
+
+.reveal:hover img {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.no-reveal-hover:hover img {
+  transform: none;
+}
+
+.hover-float:hover img {
+  transform: translateY(-4px) scale(1.03);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-in-90 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes spin-out-90 {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-in-180 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spin-out-180 {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.path-2 {
+  transform-origin: center;
+  animation: spin-out-90 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.path-3 {
+  transform-origin: center;
+  animation: spin-out-180 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.path-4 {
+  transform-origin: center;
+  animation: spin-out-90 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.group-1:hover .path-1 {
+  animation: spin 10s linear infinite;
+  transform-origin: center;
+}
+
+.group-2:hover .path-2 {
+  animation: spin-in-90 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center;
+}
+
+.group-3:hover .path-3 {
+  animation: spin-in-180 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center;
+}
+
+.group-4:hover .path-4 {
+  animation: spin-in-90 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+
+/* Kustomisasi Card Testimoni */
+/* Biarkan Swiper yang mengatur lebar slide lewat JS */
+/* Paksa wrapper untuk berjejer ke samping jika Swiper gagal meload defaultnya */
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+/* Pastikan slide tidak mengambil lebar penuh agar bisa berjejer 3 */
+.swiper-slide {
+  height: auto;
+  width: auto;
+  /* Biarkan JS yang menentukan */
+  flex-shrink: 0;
+}
+
+.testimonial-card {
+  border: 2px solid #38bdf8;
+  border-radius: 24px;
+  padding: 2rem;
+  min-height: 300px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: #006da0;
+  transform: translateY(-5px);
+}
+
+.avatar-placeholder {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+/* Hide chatbot smoothly */
+.chat-hidden {
+  opacity: 0;
+  transform: translateY(24px) scale(0.92);
+  pointer-events: none;
+  transition-delay: 0.05s;
+}
+
+#toggleChat {
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* Kustomisasi tombol navigasi carousel layanan umum & lainnya */
+.carousel-nav-container {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .carousel-nav-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.btn-carousel-nav {
+  background-color: white;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-carousel-nav:hover {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.btn-carousel-nav:active {
+  transform: scale(0.95);
+}
