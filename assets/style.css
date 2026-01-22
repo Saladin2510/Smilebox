@@ -25,6 +25,70 @@
   background-color: green;
 }
 
+/* Carousel */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  background: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.carousel:hover .track {
+  animation-play-state: paused;
+}
+
+.track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 20s linear infinite;
+}
+
+.card {
+  flex-shrink: 0;
+  padding-left: 20px;
+  width: 200px;
+  height: 120px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * 5 - 40px * 5));
+  }
+}
+
 /* ===== Scroll Reveal Animation ===== */
 .reveal {
   opacity: 0;
