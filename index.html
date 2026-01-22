@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth bg-sky-400">
 
 <head>
     <meta charset="UTF-8" />
@@ -27,9 +27,9 @@
 
 <body>
     <!--Navbar-->
-    <nav class="mulish navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0">
+    <nav class="mulish navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0 text-white">
         <div id="nav-container"
-            class="flex items-center justify-between w-full px-7 md:px-10 py-6 bg-transparent transition-all duration-300 flex-wrap">
+            class="flex items-center justify-between w-full px-7 md:px-24 py-6 bg-transparent transition-all duration-300 flex-wrap">
 
             <div class="flex items-center">
                 <img src="./assets/" alt="Smilebox Logo" class="w-6 h-6 md:w-6 md:h-6" />
@@ -45,7 +45,7 @@
             </button>
 
             <div id="menu-items" class="hidden w-full md:flex md:w-auto md:items-center md:gap-10 mt-6 md:mt-0">
-                <div class="flex flex-col md:flex-row md:items-center gap-6 text-sm font-medium text-gray-500">
+                <div class="flex flex-col md:flex-row md:items-center gap-6 text-sm font-medium">
                     <a href="#tentang" class="hover:text-black transition">Tentang</a>
                     <a href="#layanan" class="hover:text-black transition">Layanan</a>
                     <a href="#dokter" class="hover:text-black transition">Dokter</a>
@@ -56,76 +56,30 @@
     </nav>
 
     <!--Konten-->
-    <main class="relative w-full pt-40">
+    <main class="relative w-full">
         <!--HEADER-->
         <section id="header" class="reveal no-reveal-hover">
-            <section class="relative w-full aspect-[2/1] flex flex-col items-center">
+            <section class="hero">
+
+                <div class="bg-slider">
+                    <img src="https://plus.unsplash.com/premium_photo-1679865370855-5a367b828f9a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain"
+                        class="bg-image">
+                    <img src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Forest"
+                        class="bg-image">
+                    <img src="https://images.unsplash.com/photo-1571090308606-124919adff74?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ocean"
+                        class="bg-image">
+                </div>
+
+                <div class="hero-overlay"></div>
 
                 <div
-                    class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full rounded-t-full bg-sky-400 overflow-hidden z-10">
-                    <div class="flex flex-col items-center w-full">
-                        <h1 class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] [text-shadow:4px_4px_0px_rgba(0,0,0,1)]"
-                            aria-hidden="true">
-                            Terdapat Berlian di Senyumanmu
-                        </h1>
-                    </div>
+                    class="hero-content relative z-10 flex flex-col justify-end items-start pb-20 h-full text-white px-24 mx-auto">
+                    <h1 class="fraunces text-6xl font-bold mb-5">Terdapat berlian di senyumanmu</h1>
+                    <p class="mulish text-base">Nikmati keindahan alam yang menakjubkan</p>
                 </div>
 
-                <div
-                    class="absolute bottom-[5%] xl:bottom-[24%] left-1/2 -translate-x-1/2 w-[55%] xl:w-[45%] h-full z-20 pointer-events-none">
 
-                    <img src="./assets/image/header/header-1.png" alt="Portrait 1"
-                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-100" />
-
-                    <img src="./assets/image/header/header-2.png" alt="Portrait 2"
-                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
-
-                    <img src="./assets/image/header/header-3.png" alt="Portrait 2"
-                        class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
-
-                    <div
-                        class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent z-30">
-                    </div>
-                </div>
-
-                <div class="absolute inset-0 flex flex-col items-center pointer-events-none z-30">
-                    <h1
-                        class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-center px-10 pt-[2%] lg:pt-[5%]">
-                        Terda<span class="text-white [text-shadow:4px_4px_0px_rgba(0,0,0,1)]">pat Berlian di
-                            Senyu</span>manmu
-                    </h1>
-                </div>
-
-                <h1
-                    class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-black text-center px-10 pt-[2%] lg:pt-[5%] z-0 [text-shadow:4px_4px_0px_rgba(0,188,255,1)]">
-                    Terdapat Berlian di Senyumanmu
-                </h1>
             </section>
-
-            <section class="w-full bg-sky-400 pb-10 xl:pb-0">
-                <h1
-                    class="fraunces block xl:hidden text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] z-0">
-                    Terdapat Berlian di
-                    <span class="inline-block whitespace-nowrap">
-                        Senyumanmu<img src="./assets/image/doodles/diamond-white.svg"
-                            class="inline-block w-8 h-8 mb-[0.5em] ml-0.5" alt="icon" />
-                    </span>
-                </h1>
-            </section>
-
-            <section class="hidden xl:flex w-full bg-sky-400 justify-center items-center py-4 hover-float">
-                <img src="./assets/image/doodles/diamond-white.svg" alt="diamond">
-            </section>
-
-            <section class="w-full bg-sky-400 flex justify-center hover-float">
-                <img src="./assets/image/doodles/line.svg" alt="line">
-            </section>
-
-            <div class="w-full bg-sky-400 py-10 xl:py-20 px-10 flex items-center justify-center">
-                <h1 class="fraunces font-bold text-white text-3xl xl:text-6xl text-center">
-                    Senyumanmu perlu <i>visi</i>, bukan perbaikan
-                </h1>
-            </div>
 
             <!--TENTANG-->
             <section id="tentang">
